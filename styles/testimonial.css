@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+body{
+    font-family: 'Sora', sans-serif;
+}
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+p,ul,li{
+    color: #52525A;
+}
+ul,li{
+    list-style: none;
+}
+.container{
+    max-width: 1280px;
+    margin-inline:auto;
+}
+
+/* use flex */
+.review-section-wrapper{
+    background-color: #FAFAF9;
+    padding: 120px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* review content related style */
+.review-content{
+    width: 48%;
+}
+.header-img{
+    width: 50px;
+    height: 50px;
+    background-color: #F5C044;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.header-img > img{
+    width: 50%;
+}
+header .heading{
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
+.review-content .review-paragraph{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.reviewer-items{
+    font-size:0.857rem ;
+    margin-top:2.2rem;
+}
+
+ul.reviewer-items li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* reviewer-boxes related styles */
+.review-boxes{
+    width: 52%;
+}
+.box{
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 65%;
+    margin-bottom: 35px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.box-logo-star{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.box-logo-star>img{
+    width: 90px;
+}
+.box> h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.box > p{
+    line-height: 1.8rem;
+}
+#google-box{
+    transform: translateX(50%);
+}
+
+/* Responsive related style */
+
+@media screen and (max-width:640px) {
+    .review-section-wrapper{
+        flex-direction: column;
+        padding:130px 20px;
+    }
+    #google-box{
+        transform: translateX(46%);
+    }
+    .review-content{
+        width: 100%;
+    }
+    .box{
+        width: 130%;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .box{
+        width: 190%;
+    }
+    #google-box{
+        transform: translate(0);
+    }   
+}
